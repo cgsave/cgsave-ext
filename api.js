@@ -17,7 +17,7 @@ var API = {
       req.onerror = function() {
         reject(Error("XHR error"));
       };
-      req.open('POST', 'https://hackershare.dev/' + path);
+      req.open('POST', 'https://cgsave.com/' + path);
       req.setRequestHeader('Content-Type', 'application/json; charset=UTF8');
       req.setRequestHeader('X-Accept', 'application/json');
       req.setRequestHeader('extension-token', localStorage[Auth.storageKey.extensionToken]);
@@ -26,8 +26,8 @@ var API = {
   },
 
   /**
-   * Add a URL to hackershare.
-   * https://hackershare.dev/extensions .
+   * Add a URL to cgsave.
+   * https://cgsave.com/extensions .
    * @param url URL to add.
    * @return A Promise of the API call result.
    */
@@ -50,7 +50,7 @@ var Auth = {
   },
 
   go: function() {
-    window.open("https://hackershare.dev/sessions/new" + "?chrome-callback=" + Auth.redirectUri);
+    window.open("https://cgsave.com/sessions/new" + "?chrome-callback=" + Auth.redirectUri);
   },
 
   onGotUserPermission: function(url) {

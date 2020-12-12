@@ -1,8 +1,8 @@
-# hackershare-ext
+# cgsave-ext
 
-Save to hackershare.dev, a Chrome extension for https://hackershare.dev
+Save to cgsave.com, a Chrome extension for https://cgsave.com
 
 ## website
 
-* https://hackershare.dev
-* https://github.com/hooopo/hackershare
+* https://cgsave.com
+* https://github.com/jeanim/cgsave
